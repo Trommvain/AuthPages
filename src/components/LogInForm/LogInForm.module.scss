@@ -1,0 +1,46 @@
+@import '../../common/scssTemplates';
+@import '../../common/scssVariables';
+
+.form {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    color: $lightThemeColor;
+
+    @media screen and (min-width: 320px) and (max-width: 620px) {
+        width: 300px;
+        padding: 40px 0;
+    }
+}
+
+.input {
+    @extend %input;
+    width: 90%;
+
+    @media screen and (min-width: 320px) and (max-width: 620px) {
+        width: 83%;
+    }
+}
+
+.showPasswordIcon {
+    position: relative;
+    bottom: 78px;
+    left: 438px;
+    width: 35px;
+    height: 30px;
+    margin-bottom: -30px;
+
+    @media screen and (min-width: 320px) and (max-width: 620px) {
+        left: 250px;
+    }
+}
+
+.loginBtn {
+    @extend %formSubmitBtn;
+}
+
+.errorMsg {
+    @extend %errorMsg;
+}

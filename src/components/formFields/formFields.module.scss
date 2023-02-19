@@ -1,0 +1,50 @@
+@import '../../common/scssTemplates';
+@import '../../common/scssVariables';
+
+.fieldSection {
+    height: 100px;
+  }
+  
+.input {
+    @extend %input;
+    margin: 0 5px;
+
+    @media screen and (min-width: 320px) and (max-width: 630px) {
+        width: 75vw;
+        margin: 0;
+    }
+}
+
+.radioBtnContainer {
+    display: flex;
+    width: 550px !important;
+    padding: 20px 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: $lightThemeColor;
+    width: 100%;
+    border: 1px solid $lightThemeColor;
+    margin: 0 auto 20px auto;
+    padding: 15px 10px;
+
+    @media screen and (min-width: 320px) and (max-width: 630px) {
+        width: 80vw !important;
+    }
+}
+
+.radioBtn {
+    margin-right: 10px;
+}
+
+.radioBtnLbl {
+    margin: 0;
+}
+
+.description {
+    font-size: 14px;
+    margin: 0;
+}
+
+.errorMsg {
+   @extend %errorMsg;
+}

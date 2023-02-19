@@ -1,0 +1,53 @@
+@import '../../common/scssTemplates';
+@import '../../common/scssVariables';
+
+.form {
+    min-width: 320px;
+}
+
+.inputBlock {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: space-around;
+    padding: 20px 0 0 0;
+}
+
+.allowOffersContainer {
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 320px) and (max-width: 630px) {
+        width: 80vw;
+    }
+}
+
+.allowCheckbox {
+    margin-right: 8px;
+}
+
+.allowOffers {
+    width: 550px;
+    margin: 0 auto;
+    color: $lightThemeColor;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+
+    @media screen and (min-width: 320px) and (max-width: 630px) {
+        width: 75vw;
+    }
+}
+
+.createAccBtn {
+    @extend %formSubmitBtn;
+    display: block;
+    width: 575px;
+    margin: 15px auto 0 auto;
+    
+
+    @media screen and (min-width: 320px) and (max-width: 630px) {
+        width: 85vw;
+    }
+}

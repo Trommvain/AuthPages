@@ -1,0 +1,31 @@
+@import '../../common/scssVariables';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.logoPic {
+    width: 200px;
+}
+
+.authBtn {
+    padding: 10px 15px;
+    color: $lightThemeColor;
+    background: transparent;
+    border: 1px solid $lightThemeColor;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 15px;
+    line-height: 22px;
+}
+
+.link {
+    text-decoration: none;
+    color: $lightThemeColor;
+}
